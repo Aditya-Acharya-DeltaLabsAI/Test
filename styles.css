@@ -1,0 +1,84 @@
+
+/* Additional custom styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #d9eeff;
+}
+
+/* Custom scrollbar for chat */
+.overflow-y-auto::-webkit-scrollbar {
+    width: 4px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
+}
+
+.overflow-y-auto::-webkit-scrollbar-thumb:hover {
+    background: #a8a8a8;
+}
+
+/* Style the icon buttons */
+.tab-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    background-color: white;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 6px;
+    transition: border 0.2s ease-in-out;
+    border: 1px solid transparent;
+    margin-right: 8px;
+}
+
+.tab-button i {
+    font-size: 1rem;
+    color: #1F7AE0; /* Set icon color to blue */
+}
+
+.tab-button:hover {
+    border: 1px solid #1F7AE0;
+}
+
+/* Chart containers */
+#expenses-chart, #turnover-chart, #inventory-chart, #monthly-chart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Headings - Poppins Font */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Smooth transitions */
+button {
+    transition: all 0.2s ease-in-out;
+}
+
+/* Table hover effects */
+tbody tr:hover {
+    background-color: #e2e8f0; /* Light gray for hover */
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Chat bubble animations */
+.rounded-lg {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+    
